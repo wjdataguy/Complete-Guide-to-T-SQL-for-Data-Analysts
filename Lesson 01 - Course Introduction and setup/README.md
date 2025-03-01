@@ -1,1 +1,1 @@
-Lesson 01 - Course Introduction and setup
+# Lesson 01 - Course Introduction and setup
