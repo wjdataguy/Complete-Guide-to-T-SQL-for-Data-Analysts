@@ -21,8 +21,8 @@ https://learn.microsoft.com/en-us/ssms/install/install
 <b>Step 3 - CREATE BookSellers database</b><br>
 With Management Studio open, run the <b>CREATE BookSellers Database.sql</b> script. Watch the course videos for a brief demo of this.
 
-<b>Step 4 - CREATE DemoSets database</b><br>
-With Management Studio open, run the <b>CREATE DemoSets Database.sql</b> script. Watch the course videos for a brief demo of this.
+<b>Step 4 - CREATE TSQLConceptDemos database</b><br>
+With Management Studio open, run the <b>CREATE TSQLConceptDemos Database.sql</b> script. Watch the course videos for a brief demo of this.
 
 <b>Step 5 - Install AdventureWorks</b><br>
 Download links and installation instructions can be found at:<br>
