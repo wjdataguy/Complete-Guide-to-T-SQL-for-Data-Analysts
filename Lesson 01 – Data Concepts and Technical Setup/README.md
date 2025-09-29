@@ -2,12 +2,12 @@
 
 <b>Overview</b><br>
 This GitHub repository will point you to CURRENT Microsoft resources to help with this.
-You need to do all this setup on your own, and there is no support aside from what you can obtain on your own. The good news is that the tools needed for this course can all be downloaded for free.
+You need to do all this setup on your own, and NO SUPPORT is provided aside from what you can obtain on your own. The good news is that the tools needed for this course can all be downloaded for free.
 
 You will need access to a SQL Server, SQL Server Management Studio, and have the ability to create databases on that SQL Server. For this reason, it is best if you can do the installation on a personal computer. Setup is not that hard, but may take more time if you are using a work machine or a machine with lots of security on it.
 
 <b>Step 1 - Install SQL Server</b><br>
-I have run this class from end to end using <b>SQL Server 2022 Express</b> which can be downloaded from
+I have run this class from end to end using <b>SQL Server 2022 Express</b> which can be downloaded from:<br>
 https://www.microsoft.com/en-ca/sql-server/sql-server-downloads
 
 I chose to use an on-premise verison of SQL Server as many learners do not want to set-up Azure subscriptions and deal with any potential cost concerns.
@@ -27,3 +27,6 @@ With Management Studio open, run the <i>CREATE TSQLConceptDemos Database.sql</i>
 <b>Step 5 - Install AdventureWorks</b><br>
 Download links and installation instructions can be found at:<br>
 https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure
+
+<b>Step 6 - Get down to business and start writing some T-SQL!</b><br>
+You are now ready to start the lessons!
