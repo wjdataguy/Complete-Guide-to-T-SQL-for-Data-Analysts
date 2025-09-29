@@ -10,7 +10,7 @@ You will need access to a SQL Server, SQL Server Management Studio, and have the
 I have run this class from end to end using <b>SQL Server 2022 Express</b> which can be downloaded from
 https://www.microsoft.com/en-ca/sql-server/sql-server-downloads
 
-I chose to use an on-premise verison of SQL Server as many learners do not want to set-up Azure subscriptions and deal with any potetial cost concerns.
+I chose to use an on-premise verison of SQL Server as many learners do not want to set-up Azure subscriptions and deal with any potential cost concerns.
 
 Feel free to use any verison of SQL Server that you choose to, but keep in mind that the database creation scripts may or may not work on that verison. If not, you may need to adjust parts of the scripts that do not work on your own. 
 
@@ -19,10 +19,10 @@ I have run this class from end to end using <b>Server Management Studio 21.x</b>
 https://learn.microsoft.com/en-us/ssms/install/install
 
 <b>Step 3 - CREATE BookSellers database</b><br>
-With Management Studio open, run the <b>CREATE BookSellers Database.sql</b> script. Watch the course videos for a brief demo of this.
+With Management Studio open, run the <i>CREATE BookSellers Database.sql</i> script. Watch the course videos for a brief demo of this.
 
 <b>Step 4 - CREATE TSQLConceptDemos database</b><br>
-With Management Studio open, run the <b>CREATE TSQLConceptDemos Database.sql</b> script. Watch the course videos for a brief demo of this.
+With Management Studio open, run the <i>CREATE TSQLConceptDemos Database.sql</i> script. Watch the course videos for a brief demo of this.
 
 <b>Step 5 - Install AdventureWorks</b><br>
 Download links and installation instructions can be found at:<br>
