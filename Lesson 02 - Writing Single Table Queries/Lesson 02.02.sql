@@ -14,8 +14,17 @@ SELECT	[City], [ProvinceID], [CountryID]
 FROM	[Sales].[Customer]
 
 
-
-
+--NOTE: YOU WILL GET 7 ROWS BACK IN THE NEW SCHEMA
+/*
+City	ProvinceID	CountryID
+Calgary		1	CA
+Calgary		1	CA
+Vancouver	2	CA
+Boulder		19	US
+Burnaby		2	CA
+Burnaby		2	CA
+Denver		19	US
+*/
 
 
 
@@ -122,8 +131,14 @@ GO
 SELECT	[City], [ProvinceID], [CountryID]
 FROM	[Sales].[Customer]
 
+--NOTE: YOU WILL GET 7 ROWS BACK IN THE NEW SCHEMA
+
 SELECT	ALL [City], [ProvinceID], [CountryID]
 FROM	[Sales].[Customer]
 
+--NOTE: YOU WILL GET 7 ROWS BACK IN THE NEW SCHEMA
+
 SELECT	DISTINCT [City], [ProvinceID], [CountryID]
 FROM	[Sales].[Customer]
+
+--NOTE: YOU WILL GET 5 ROWS BACK IN THE NEW SCHEMA. Denver was a late add

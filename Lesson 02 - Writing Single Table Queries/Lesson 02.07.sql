@@ -8,7 +8,8 @@ Conversion Functions
 SELECT	*
 FROM 	HumanResources.Employee
 
---Use CAST to concatenate
+--INCORRECT - WILL FAIL AS THERE IS NOT CONVERSION OF THE employeeID
+--THIS CHANGED AFTER THE VIDEO WAS DONE
 SELECT	'The ID for : ' + 
 		LastName + ' is ' +
 		employeeID AS 'ID List'
@@ -30,12 +31,14 @@ SELECT	'1' + 2 AS TheOutput
 --These examples retrieve the name of the product, for those products 
 --that have a 3 as the first digit of list price, and converts their 
 --ListPrice values to char
+--EXPLICIT CONVERSION
 SELECT	BookTitle,
 		UnitPrice
 FROM	[Purchasing].[Book]
 WHERE	CAST(UnitPrice AS varchar) LIKE '3%';
 
 
+--IMPLICIT CONVERSION
 SELECT	BookTitle,
 		UnitPrice
 FROM	[Purchasing].[Book]
@@ -83,10 +86,10 @@ SELECT	FirstName,
 		BirthDate,
 		MONTH(BirthDate) AS BirthMonth,
 		DATEDIFF(YEAR, BirthDate, HireDate) AS AgeOnHireDate,
-		YEAR(DATEADD(YEAR, 5, HireDate)) YearOfFifthWorkAnniversary 
+		YEAR(DATEADD(YEAR, 5, HireDate)) YearOfFifthWorkAnniversary --THIS DATE SLIDES AND MAY YIELD DIFFERNT RESULTS BASED ON WHEN YOU RUN THE QUERY
 FROM	[HumanResources].[Employee]
 
-
+--THESE RESULTS WILL BE SPECIFIC TO YOUR MACHINE, LOCATION, AND WHEN YOU RUN THE QUERY
 SELECT	SYSDATETIME(),
 		SYSDATETIMEOFFSET(),
 		SYSUTCDATETIME(),
@@ -177,6 +180,7 @@ SELECT	customerName,
 		ISNULL(email, 'No email on file') AS email,
 		phone
 FROM	Sales.Customer
+--NOTE: YOU WILL GET 7 ROWS BACK WITH THE CURRENT BOOKSELLERS
 
 SELECT	customerName, 
 		email,
@@ -188,6 +192,8 @@ SELECT	customerName,
 		phone,
 		COALESCE (email, phone, 'Unknown Contact Method') AS ContactMethod
 FROM	Sales.Customer
+--IN THIS QUERY, I SHOW ALL SOURCE COLUMNS FOR CLARITY
+
 
 /********************************************************************
 DEMO 2.7.7
