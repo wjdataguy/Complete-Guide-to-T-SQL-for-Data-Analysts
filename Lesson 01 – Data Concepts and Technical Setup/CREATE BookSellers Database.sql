@@ -762,7 +762,9 @@ INSERT INTO Sales.Customer VALUES (6, 'Book Corner', 'Janice', 'Timmons', 4,
 	'40 Canada Way', 'B6H-8U6', 'Burnaby', 2, 'CA', NULL, NULL, 'A',
 	getDate(), SUSER_NAME(), getDate(), SUSER_NAME())
 
-
+INSERT INTO Sales.Customer VALUES (7, 'Hole in the wall', 'Gene', 'Watson', 6,
+	'32 Avalanche road', '83746-837', 'Denver', 19, 'US', NULL, NULL, 'A',
+	getDate(), SUSER_NAME(), getDate(), SUSER_NAME())
 
 GO
 
